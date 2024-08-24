@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "hbo-vignette",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.max.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
